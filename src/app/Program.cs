@@ -8,7 +8,8 @@ namespace ConsoleApplication
         public static void Main(string[] args)
         {
             var logger = new Logger("Main Logger"); 
-            logger.Log(LogLevel.Error, "Jakis blad: {0} {1}", "glupi blad", "asdasd");
+            logger.Info("logging simple info message");
+            logger.Warn("logging {0} message with parameters", "warn");
         }
     }
 }
